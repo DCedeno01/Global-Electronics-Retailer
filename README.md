@@ -28,10 +28,10 @@
 ### Visualizations
 
 #### Total Sales by Store
-![Total Sales by Store](images/BarChart.png)
+![Total Sales by Store](BarChart.png)
 
 #### Store Performance Classification
-![Store Performance Classification](images/PieChart.png)
+![Store Performance Classification](PieChart.png)
 
 ### T-SQL Queries
 See [Goal2_Queries.sql](Goal2_Queries.sql) for the full query file.
