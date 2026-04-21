@@ -106,4 +106,4 @@ Global-Electronics-Retailer/
 - Dataset: [Maven Analytics — Global Electronics Retailer](https://mavenanalytics.io/data-playground/global-electronics-retailer)
 - Azure SQL Database documentation
 - DBCode extension for Visual Studio Code
-- Google Gemini — assistance with query structure, and visualization guidance
+- Google Gemini — assistance with documentation and visualization guidance
