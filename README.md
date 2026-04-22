@@ -108,3 +108,4 @@ Global-Electronics-Retailer/
 - Azure SQL Database documentation
 - DBCode extension for Visual Studio Code
 - Google Gemini — assistance with documentation and visualization guidance
+- Claude AI - assistance with customizing Python script with the `pyodbc` library to upload CSVs
