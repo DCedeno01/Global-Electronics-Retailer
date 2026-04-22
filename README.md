@@ -32,12 +32,13 @@ Analyze customer demographics, geographic distribution, seasonal sales patterns,
 ## Process
 
 1. Downloaded the Global Electronics Retailer dataset from [Maven Analytics](https://mavenanalytics.io/data-playground/global-electronics-retailer)
-2. Uploaded CSV files to Azure Blob Storage with SAS token authentication
-3. Created database tables in Azure SQL Database and loaded data via `BULK INSERT`
-4. Connected Azure SQL Database to VS Code using the DBCode extension
-5. Wrote 12 T-SQL queries across three analysis goals, including joins, CTEs, window functions, subqueries, and a stored procedure with IF/ELSE logic
-6. Built visualizations using DBCode's charting feature
-7. Collaborated via GitHub with a shared repository
+2. Created an Azure SQL Database using the Azure for Students free tier
+3. Created all database tables in Azure SQL using the Query Editor
+4. Loaded CSV data into Azure SQL using a custom Python script (`load_data.py`) with the `pyodbc` library and ODBC Driver 17 for SQL Server
+5. Connected Azure SQL Database to VS Code using the mssql and DBCode extensions
+6. Wrote 12 T-SQL queries across three analysis goals, including joins, CTEs, window functions, subqueries, and a stored procedure with IF/ELSE logic
+7. Built visualizations using DBCode's charting feature
+8. Collaborated via GitHub with a shared repository
 
 ---
 
