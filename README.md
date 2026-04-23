@@ -1,4 +1,4 @@
-# Global Electronics Retailer — Sales and Revenue Trends 2024
+# Global Electronics Retailer — Sales and Revenue Trends 2016-2020
 
 A comprehensive analysis of sales performance, store performance, and customer trends for the **Global Electronics Retailer**, a fictional global company specializing in electronic devices, home appliances, and technology solutions.
 
@@ -6,7 +6,7 @@ A comprehensive analysis of sales performance, store performance, and customer t
 
 ## Project Overview
 
-The purpose of this project is to estimate sales performance across the company's global store network in 2024 and identify trends or patterns throughout the year. Through exploratory data analysis, we examine customer behavior, sales performance, store performance, and international sales trends to surface insights that drive growth and efficiency.
+The purpose of this project is to estimate sales performance across the company's global store network and identify trends or patterns throughout the years 2016–2020.
 
 ## Team
 
@@ -35,10 +35,11 @@ Analyze customer demographics, geographic distribution, seasonal sales patterns,
 2. Created an Azure SQL Database using the Azure for Students free tier
 3. Created all database tables in Azure SQL using the Query Editor
 4. Loaded CSV data into Azure SQL using a custom Python script (`load_data.py`) with the `pyodbc` library and ODBC Driver 17 for SQL Server
-5. Connected Azure SQL Database to VS Code using the mssql and DBCode extensions
-6. Wrote 12 T-SQL queries across three analysis goals, including joins, CTEs, window functions, subqueries, and a stored procedure with IF/ELSE logic
-7. Built visualizations using DBCode's charting feature
-8. Collaborated via GitHub with a shared repository
+5. Exported the completed database as a `.bacpac` file for backup and sharing
+6. Connected Azure SQL Database to VS Code using the mssql and DBCode extensions
+7. Wrote 12 T-SQL queries across three analysis goals, including joins, CTEs, window functions, subqueries, and a stored procedure with IF/ELSE logic
+8. Built visualizations using DBCode's charting feature
+9. Collaborated via GitHub with a shared repository
 
 ---
 
@@ -72,9 +73,10 @@ Global-Electronics-Retailer/
 - **Computers** and **Cell phones** sell the most units but rank mid-tier on profitability
 
 **Store Performance (Goal 2)**
-- Top revenue stores are concentrated in specific countries and states
-- Store size (square meters) does not strongly correlate with revenue — location and market appear to matter more
-- Stores classify across three performance tiers, with a significant revenue gap between High and Low performers
+- Top revenue stores are concentrated in Canada and the United States
+- Store size (square meters) does not strongly correlate with revenue — Wyoming has only 840 sq meters but ranks #14 in total revenue
+- **18 stores** are classified as High Performers, **7** as Medium Performers, and **32** as Low Performers
+- European stores (France, Netherlands, Germany) consistently underperform compared to North American stores
 
 **Trends Over Time (Goal 3)**
 - Sales peak in **January and February**, drop sharply in March and April, then stabilize through the rest of the year with a December uptick
@@ -95,8 +97,8 @@ Global-Electronics-Retailer/
 ## Tools & Technologies
 
 - **Azure SQL Database** — cloud-hosted relational database
-- **Azure Blob Storage** — CSV staging with SAS token authentication
-- **VS Code + DBCode extension** — query development and visualization
+- **Python (pyodbc)** — CSV data loading into Azure SQL Database
+- **VS Code + mssql + DBCode extension** — query development and visualization
 - **T-SQL** — all analysis queries, including CTEs, window functions, and stored procedures
 - **GitHub** — version control and team collaboration
 
@@ -107,5 +109,6 @@ Global-Electronics-Retailer/
 - Dataset: [Maven Analytics — Global Electronics Retailer](https://mavenanalytics.io/data-playground/global-electronics-retailer)
 - Azure SQL Database documentation
 - DBCode extension for Visual Studio Code
-- Google Gemini — assistance with documentation and visualization guidance
+- Google Gemini — assistance with documentation 
 - Claude AI - assistance with customizing Python script with the `pyodbc` library to upload CSVs
+- Gamma — AI-powered presentation tool used for slide deck creation
